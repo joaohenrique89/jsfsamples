@@ -2,21 +2,19 @@ package com.portal.managedbean;
 
 import java.io.Serializable;
 
-import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 
 @ManagedBean
 @ViewScoped
-public class MockupBean implements Serializable {
+public class PrimefacesBean implements Serializable {
+	
 	private static final long serialVersionUID = -2208232584360585844L;
 
-	@PostConstruct
-	public void init() {
-
-	}
 
 	private final static String[] models;
+	
+	
 	static {
 		models = new String[4];
 		models[0] = "HP Laserjet Enterprise CM4540 MFP";
@@ -26,7 +24,7 @@ public class MockupBean implements Serializable {
 
 	}
 
-	public MockupBean() {
+	public PrimefacesBean() {
 
 	}
 	/*

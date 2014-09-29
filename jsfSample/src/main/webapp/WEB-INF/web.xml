@@ -18,7 +18,7 @@
 	</context-param>
 	
 	<welcome-file-list>
-		<welcome-file>content.xhtml</welcome-file>
+		<welcome-file>simpleJSFSample.xhtml</welcome-file>
 	</welcome-file-list>
 	
 	

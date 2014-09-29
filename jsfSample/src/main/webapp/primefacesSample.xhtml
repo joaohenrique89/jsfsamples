@@ -13,22 +13,22 @@
 	<title>Primefaces Sample</title>
 </h:head>
 <h:body>
-<h3>Primefaces component DEMO</h3>
-<h4>Dialog Component</h4>
+	<h3>Primefaces component DEMO</h3>
+	<h4>Dialog Component</h4>
 
-<p:dialog header="Basic Dialog" widgetVar="dlg1" minHeight="40">
-    <h:outputText value="Resistance to PrimeFaces is futile!" />
-</p:dialog>	
+	<p:dialog header="Basic Dialog" widgetVar="dlg1" minHeight="40">
+		<h:outputText value="Resistance to PrimeFaces is futile!" />
+	</p:dialog>
 
 
-<hr/>
+	<hr />
 
-<h4>Data Table Component</h4>
-<p:dataTable var="model" value="#{mockupBean.models}">
-    <p:column headerText="Model">
-        <h:outputText value="#{model}" />
-    </p:column>
- </p:dataTable>
+	<h4>Data Table Component</h4>
+	<p:dataTable var="model" value="#{mockupBean.models}">
+		<p:column headerText="Model">
+			<h:outputText value="#{model}" />
+		</p:column>
+	</p:dataTable>
 
 </h:body>
 </html>

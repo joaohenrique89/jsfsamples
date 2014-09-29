@@ -10,7 +10,8 @@
 
 	<modules>
 		<module>jsfSample</module>
-		<module>servletSample</module>
+		<module>servletSample</module>		
+		<module>jsfTemplateSample</module>
 	</modules>
 
 	<build>
