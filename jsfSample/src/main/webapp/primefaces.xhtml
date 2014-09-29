@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://primefaces.org/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Primefaces Sample</title>
+</h:head>
+<h:body>
+<h3>Primefaces component DEMO</h3>
+<h4>Dialog Component</h4>
+
+<p:dialog header="Basic Dialog" widgetVar="dlg1" minHeight="40">
+    <h:outputText value="Resistance to PrimeFaces is futile!" />
+</p:dialog>	
+
+
+<hr/>
+
+<h4>Data Table Component</h4>
+<p:dataTable var="model" value="#{mockupBean.models}">
+    <p:column headerText="Model">
+        <h:outputText value="#{model}" />
+    </p:column>
+ </p:dataTable>
+
+</h:body>
+</html>
