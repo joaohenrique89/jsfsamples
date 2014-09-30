@@ -1,4 +1,4 @@
-package com.portal.managedbean;
+package com.portal.ajax;
 
 import java.io.Serializable;
 
