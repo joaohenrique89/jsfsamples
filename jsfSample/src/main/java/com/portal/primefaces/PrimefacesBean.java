@@ -17,11 +17,16 @@ public class PrimefacesBean implements Serializable {
 	private String[] models;
 	
 	public PrimefacesBean(){
-		models = new String[4];
+		models = new String[7];
 		models[0] = "HP Laserjet Enterprise CM4540 MFP";
 		models[1] = "HP Officejet Pro X476 & X576";
 		models[2] = "HP Laserjet Enterprise 500 MFP M525 & M575";
 		models[3] = "HP Laserjet 400 M401 & M425";
+		
+		models[4] = "HP Laserjet 500";
+		models[5] = "HP Laserjet 600";
+		models[6] = "HP Laserjet 700";
+		
 	}
 
 }

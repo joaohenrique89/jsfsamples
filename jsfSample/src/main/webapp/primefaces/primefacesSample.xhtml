@@ -5,20 +5,23 @@
 
 <h:head>
 	<title>Primefaces Sample</title>
+	<h:outputStylesheet library="css" name="primefaces-custom.css" />
 </h:head>
+
 <h:body>
 	<h3>Primefaces component DEMO</h3>
-	<h4>Dialog Component</h4>
+	<h4>Modal Dialog Component</h4>
 
-	<p:dialog header="Basic Dialog" widgetVar="dlg1" minHeight="40">
-		<h:outputText value="Resistance to PrimeFaces is futile!" />
+	<p:dialog header="Basic Dialog" widgetVar="myDialog" minHeight="200" modal="true">
+		<h:outputText value="Drag me, Resize me, Close me!" />
 	</p:dialog>
 
-
+	<p:commandButton value="Open Dialog" type="button" onclick="PF('myDialog').show();" />
 	<hr />
 
 	<h4>Data Table Component</h4>
-	<p:dataTable var="model" value="#{primefacesBean.models}">
+	
+	<p:dataTable var="model" value="#{primefacesBean.models}" paginator="true" rows="3" styleClass="data-table">
 		<p:column headerText="Model">
 			<h:outputText value="#{model}" />
 		</p:column>
