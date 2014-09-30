@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<title>Ajax</title>
+</h:head>
+<h:body>
+	<h:form>
+		<p:commandButton value="Add Prime" ajax="true"
+			action="#{ajaxSumBean.add}" update="valueID" />
+
+		<h:commandButton value="Add JSF" >
+			<f:ajax listener="#{ajaxSumBean.add}" render="valueID" />
+		</h:commandButton>
+		
+		<h:outputText id="valueID" value="#{ajaxSumBean.value}" />
+	</h:form>
+
+</h:body>
+</html>

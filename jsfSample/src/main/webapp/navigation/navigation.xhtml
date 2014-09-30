@@ -1,17 +1,43 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui">
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
 
 <h:head>
 	<title>Navigation</title>
 </h:head>
 <h:body>
 	<h:form>
-		<h3>Using JSF outcome</h3>
-		
-		<h:button value="Submit" action="resultPage" />
+		<h2>JSF Navigation</h2>
 
-		<h:commandButton value="Submit" action="resultPage" />
+		<h3>Back-end</h3>
+		<h4>Forward</h4>
+		<h:commandButton value="BackendForward"
+			action="#{navigationBean.navForward}" />
+
+		<h4>Redirect</h4>
+		<h:commandButton value="BackendRedirect"
+			action="#{navigationBean.navRedirect}" />
+
+		<h3>Front-end</h3>
+		<h4>Forward</h4>
+		<h:commandButton action="nextPage" value="Forward" />
+		<h4>Redirect</h4>
+		<h:commandButton action="nextPage?faces-redirect=true"
+			value="Redirect" />
+
+		<h4>Link</h4>
+		<h:link outcome="nextPage" value="Link">
+			<f:param name="paramName" value="paramValueLALA" />
+		</h:link>
+
+		<h:button outcome="nextPage" value="Button">
+			<f:param name="paramName" value="paramValueLALA" />
+		</h:button>
+
+
+
+	
 	</h:form>
 
 </h:body>
